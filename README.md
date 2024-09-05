@@ -7,5 +7,5 @@ curl https://raw.githubusercontent.com/Gtajisan/build_scripts/rising-14-mclo/scr
 
 ### For crave
 ```
-crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/Gtajisam/build_scripts/rising-14-mclo/script.sh | bash"
+crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/Gtajisan/build_scripts/Pixel-os/script.sh | bash"
 ```
