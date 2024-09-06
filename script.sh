@@ -30,6 +30,7 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
+lunch pixelstar_mi439-userdebug
 lunch pixelstar_mi439-ap2a-userdebug
 echo "====== lunch Done ======="
 
