@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Project-PixelStar/manifest -b 14-qpr3 --git-lfs
+repo init -u https://github.com/Project-PixelStar/manifest -b 14-qpr3 --git-lfs 
 echo "=================="
 echo "Repo init success"
 echo "=================="
