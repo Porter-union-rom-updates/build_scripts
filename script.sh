@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b Infinity_jp .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b infinity .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -19,14 +19,6 @@ echo "============================"
 echo "============="
 echo "Sync success"
 echo "============="
-
-# Git cherry-pick
-cd vendor/infinity
-git remote add los https://github.com/LineageOS/android_vendor_lineage
-git fetch los
-git cherry-pick 198966577ace63573e5be49e03a2e59e32997054
-cd ../..
-echo "===== Cherry-picking Success ====="
 
 # remove face unlock 
 rm -rf packages/apps/FaceUnlock
