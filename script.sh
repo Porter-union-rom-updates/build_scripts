@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b Matrixx-14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b Matrixx/14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -38,8 +38,7 @@ echo "======= Export Done ======"
 
 # Lunch  
 . build/envsetup.sh
-lunch lineage_Mi439_4_19-ap2a-userdebug
-make installclean
-mka bacon
+
+
 
 
