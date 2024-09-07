@@ -20,7 +20,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-
 # Export
 export BUILD_USERNAME=FARHAN_UN
 export BUILD_HOSTNAME=crave
