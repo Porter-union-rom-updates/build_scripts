@@ -30,8 +30,7 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-lineage_mi439-ap2a-userdebug
-lineage_mi439-userdebug
+lunch lineage_mi439-ap2a-userdebug
 echo "============="
 
 # Build rom
