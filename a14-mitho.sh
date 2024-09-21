@@ -10,7 +10,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Trijal08/local_manifests -b SigmaDroid-14 --depth=1 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo --depth 1 -b sigma/14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
