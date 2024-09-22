@@ -39,6 +39,9 @@ export TARGET_BUILD_VARIANT=userdebug
 lunch sigma_mi439-userdebug
 lunch sigma_mi439-ap2a
 lunch sigma_mi439-ap2a-userdebug
+brunch mi439
+lunch sigma_mi439
+
 make installclean
 echo "============="
 
