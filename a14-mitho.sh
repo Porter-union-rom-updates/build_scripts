@@ -10,13 +10,13 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo --depth 1 -b sigma/14 .repo/local_manifests
+git clone https://github.com/Trijal08/local_manifests -b SigmaDroid-14 --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
 # build
-/opt/crave/resync.sh
+/opt/crave/resync.sh && repo sync
 echo "============="
 echo "Sync success"
 echo "============="
@@ -34,6 +34,10 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
+TARGET_PRODUCT=lineage_mi439
+export TARGET_BUILD_VARIANT=userdebug
+lunch sigma_mi439-userdebug
+lunch sigma_mi439-ap2a
 lunch sigma_mi439-ap2a-userdebug
 make installclean
 echo "============="
