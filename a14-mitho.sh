@@ -35,6 +35,9 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 lunch sigma_mi439-ap2a-userdebug
+lunch sigma_mi439-ap2a-userdebug  
+brunch mi439
+brunch mi439 userdebug
 make installclean
 echo "============="
 
