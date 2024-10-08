@@ -33,7 +33,4 @@ echo "====== Envsetup Done ======="
 # Lunch
 lunch orion_mi439-ap2a-userdebug
 lunch orion_mi439_userdebug
-echo "lunch"
-# run
 mka space
-echo "mka space"
