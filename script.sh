@@ -31,6 +31,5 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch orion_mi439-ap2a-userdebug
-lunch orion_mi439_userdebug
+lunch orion_mi439-ap2a-userdebug || lunch orion_mi439-ap3a-userdebug || lunch orion_mi439_userdebug
 mka space
