@@ -4,10 +4,9 @@ rm -rf .repo/local_manifests/
 
 
 
+
 # Initialize local repository
 repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
-
-# repo sync
 echo "=================="
 echo "Repo init success"
 echo "=================="
