@@ -19,7 +19,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Sync
-/opt/crave/resync.sh || repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+/opt/crave/resync.sh && repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 echo "============="
 echo "Sync success"
 echo "============="
@@ -47,7 +47,8 @@ croot
 brunch mi439
 
 # Lunch
-lunch orion_mi439-ap2a-userdebug || lunch orion_mi439-ap3a-userdebug || lunch orion_mi439_userdebug
+lunch orion_mi439_userdebug
+lunch orion_mi439-ap2a-userdebug 
 mka space
 
 
