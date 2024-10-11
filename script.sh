@@ -46,10 +46,7 @@ echo "============="
 croot
 brunch mi439
 
-# Lunch
-lunch orion_mi439_userdebug
-lunch orion_mi439-ap2a-userdebug 
-mka space
+
 
 
 
