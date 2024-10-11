@@ -28,7 +28,7 @@ echo "============="
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
 
 # Export
-export BUILD_USERNAME="FARHAN"
+export BUILD_USERNAME="FARHAN • OrionStarsInTheSky"
 export BUILD_HOSTNAME="crave"
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
@@ -38,13 +38,13 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-breakfast mi439
+breakfast mi439 userdebug
 make installclean -j$(nproc --all)
 echo "============="
 
 # Build ROM
 croot
-brunch mi439
+brunch mi439 userdebug
 
 
 
