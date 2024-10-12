@@ -3,11 +3,9 @@
 # Remove existing local_manifests
 rm -rf .repo/local_manifests/
 
-# Initialize git lfs
-git lfs install
 
 # repo init manifest
-repo init -u https://github.com/OrionOS-prjkt/android -b 14.0 --git-lfs --depth=1
+repo init -u https://github.com/OrionOS-prjkt/android -b 14.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
