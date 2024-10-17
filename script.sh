@@ -36,13 +36,12 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-Lunch orion_Mi439_4_19-userdebug
-echo "============="
+. build/envsetup.sh
+lunch orion_Mi439_4_19-ap2a-userdebug
+lunch orion_Mi439_4_19-userdebug
 
 # Build ROM
-croot
-brunch mi439 userdebug
-
+mka space
 
 
 
