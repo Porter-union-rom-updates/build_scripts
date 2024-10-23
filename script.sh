@@ -1,11 +1,39 @@
+#!/bin/bash
+
 rm -rf .repo/local_manifests/
-#repo init rom
-repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
-#Local manifests
-git clone https://github.com/Gtajisan/local_manifests .repo/local_manifests -b a14
-#build
+
+# repo init rom
+repo init -u https://github.com/ProjectEverest/manifest -b udc --git-lfs
+echo "=================="
+echo "Repo init success"
+echo "=================="
+
+# Local manifests
+git clone https://github.com/Gtajisan/local_manifests_clo --depth 1 -b Everest/14 .repo/local_manifests
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
+
+# Sync
 /opt/crave/resync.sh
-. build/envsetup.sh
-lunch lineage_Mi439-ap1a-userdebug
-make installclean
-brunch Mi439_4_19 || brunch lineage_Mi439_4_19-ap1a-userdebug
+echo "============="
+echo "Sync success"
+echo "============="
+
+# Export
+export BUILD_USERNAME=FARHAN_UN
+export BUILD_HOSTNAME=crave 
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+echo "======= Export Done ======"
+
+# Set up build environment
+. build/envsetup.sh 
+echo "====== Envsetup Done ======="
+
+# Lunch
+lunch lineage_mi439-ap2a-userdebug
+breakfast mi439 userdebug
+echo "============="
+
+# Build rom
+m evolution
