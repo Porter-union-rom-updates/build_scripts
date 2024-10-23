@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/ProjectEverest/manifest -b udc --git-lfs
+repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=FARHAN_UN
+export BUILD_USERNAME=devil
 export BUILD_HOSTNAME=crave 
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 echo "======= Export Done ======"
@@ -36,4 +36,4 @@ breakfast mi439 userdebug
 echo "============="
 
 # Build rom
-m evolution
+mka everest 
