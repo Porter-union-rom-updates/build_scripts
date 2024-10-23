@@ -33,6 +33,8 @@ echo "====== Envsetup Done ======="
 # Lunch
 lunch lineage_mi439-ap2a-userdebug
 breakfast mi439 userdebug
+. build/envsetup.sh
+brunch mi439
 echo "============="
 
 # Build rom
