@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b Matrixx/14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b Matrixx-14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -20,23 +20,21 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-# Git cherry-pick
-cd vendor/lineage
-git remote add los https://github.com/LineageOS/android_vendor_lineage
-git fetch los
-git cherry-pick 198966577ace63573e5be49e03a2e59e32997054
-cd ../..
-echo "===== Cherry-picking Success ====="
-
 # Export
-export BUILD_USERNAME=FARHAN_UN
+export BUILD_USERNAME=FARHAN
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
+# Set up build environment
+#source build/envsetup.sh
+#echo "====== Envsetup Done ======="
+
+# Lunch
+#lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap3a-userdebug || lunch lineage_Mi439_4_19-ap2a-userdebug
+#echo "============="
+
 # Lunch  
 . build/envsetup.sh
-brunch mi439
-brunch mi439 userdebug
-
-
+brunch Mi439_4_19
+brunch Mi439_4_19 userdebug
 
