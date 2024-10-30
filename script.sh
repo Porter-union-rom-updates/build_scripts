@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests/
 
-repo init -u https://github.com/Gtajisan/android.git -b 14.0 --git-lfs
+repo init -u https://github.com/crdroidandroid/android.git -b 15 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
