@@ -1,8 +1,8 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
-
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13
+# repo init
+repo init -u https://github.com/Spark-Rom/manifest -b pyro-next
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -14,7 +14,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Sync
-/opt/crave/resync.sh
+/opt/crave/resync.sh && repo sync --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 echo "============="
 echo "Sync success"
 echo "============="
@@ -31,5 +31,7 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-lunch derp_Mi439_4_19-userdebug
+# lunch 
+lunch spark_Mi439_4_19-userdebug
 make installclean
+mka bacon 
