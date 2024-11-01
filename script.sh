@@ -29,6 +29,12 @@ git cherry-pick 7ecc750
 git revert 8ae1b73
 git remote remove tmpRepo
 cd ../../../
+# extra 
+cd packages/apps/Settings
+git remote add tmpRepo https://github.com/Gtajisan/android_packages_apps_Settings
+git fetch tmpRepo 14.0
+git cherry-pick 89ef794
+git cherry-pick 8ae1b73
 
 cd lineage-sdk
 git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
