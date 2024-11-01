@@ -46,8 +46,8 @@ cd ../..
 # maintener string 
 cd packages/apps/Settings
 git fetch https://github.com/Gtajisan/android_packages_apps_Settings 14.0
-git cherry-pick b8c1f87
-git cherry-pick 5d03127
+git cherry-pick 06ca759
+git cherry-pick 7826f44
 cd ../../..
 
 # Export
