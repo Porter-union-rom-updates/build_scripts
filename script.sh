@@ -33,8 +33,8 @@ cd ../../../
 cd packages/apps/Settings
 git remote add tmpRepo https://github.com/Gtajisan/android_packages_apps_Settings
 git fetch tmpRepo 14.0
-git cherry-pick 89ef794
-git cherry-pick 8ae1b73
+git cherry-pick 06ca7591830b309adce0fe070c0d8d5b4c2e28bc
+git cherry-pick 3dd2f597effc0b05f6a084f38561f05f059691aa
 
 cd lineage-sdk
 git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
