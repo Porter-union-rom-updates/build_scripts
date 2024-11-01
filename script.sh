@@ -19,30 +19,36 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-#Framework_base patches
-cd frameworks/base
-git fetch crdroid --unshallow
-git fetch https://github.com/RisingTechOSS/android_frameworks_base fourteen
-#Force LTA CA
-git cherry-pick 9756c4c
-#Downgrade
-git cherry-pick ba93896
-cd ../..
-
-#toggle for LTE CA
+# Ty Crave full credit tavukkdoner
 cd packages/apps/Settings
-git fetch crdroid --unshallow
-git fetch https://github.com/RisingTechOSS/android_packages_apps_Settings fourteen
-git cherry-pick 041f5f0
-cd ../../..
+git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Settings
+git fetch tmpRepo 14.0
+git cherry-pick 75c8e07
+git cherry-pick 7ecc750
+# https://github.com/crdroidandroid/android_packages_apps_Settings/commit/8ae1b733443d0aecacef1f64f2e020c95e42ca22
+git revert 8ae1b73
+git remote remove tmpRepo
+cd ../../../
 
-#json support for PIF
-cd frameworks/base
-git fetch https://github.com/PhantomEnigma/android_frameworks_base 14.0
-git cherry-pick b8c1f87
-git cherry-pick 5d03127
-cd ../..
+cd lineage-sdk
+git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
+git fetch tmpRepo1 14.0
+git cherry-pick 89ef794
+git remote remove tmpRepo1
+cd ../
 
+cd vendor/lineage
+git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
+git fetch tmpRepo2 14.0
+git cherry-pick 40fe82e
+git remote remove tmpRepo2
+cd ../../
+
+if [ ! -e "vendor/lineage-priv" ]; then
+    curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
+    chmod +x create-signed-env.sh
+    ./create-signed-env.sh
+fi
 
 # Export
 #export BUILD_USERNAME=Farhan 
