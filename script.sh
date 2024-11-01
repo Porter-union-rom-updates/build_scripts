@@ -43,6 +43,13 @@ git cherry-pick b8c1f87
 git cherry-pick 5d03127
 cd ../..
 
+# maintener string 
+cd packages/apps/Settings
+git fetch https://github.com/Gtajisan/android_packages_apps_Settings 14.0
+git cherry-pick b8c1f87
+git cherry-pick 5d03127
+cd ../../..
+
 # Export
 #export BUILD_USERNAME=Farhan 
 #echo "======= Export Done ======"
