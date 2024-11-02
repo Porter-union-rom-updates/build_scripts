@@ -32,6 +32,11 @@ echo "============="
 # echo "Keys copied"
 # echo "============="
 
+# extra 
+git fetch https://github.com/Gtajisan/android_packages_apps_Settings
+git cherry-pick 3dd2f59
+git cherry-pick 06ca759
+
 # Export
 export BUILD_USERNAME=FARHAN 
 export BUILD_HOSTNAME=crave
