@@ -8,10 +8,10 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b 14/crd .repo/local_manifests
-echo "============================"
-echo "Local manifest clone success"
-echo "============================"
+#git clone https://github.com/Gtajisan/local_manifests -b 14/crd .repo/local_manifests
+#echo "============================"
+#echo "Local manifest clone success"
+#echo "============================"
 
 # Local manifests
 git clone https://github.com/Gtajisan/local_manifests -b a14-crd .repo/local_manifests
