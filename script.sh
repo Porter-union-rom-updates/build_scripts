@@ -33,28 +33,28 @@ echo "============="
 # echo "============="
 
 #Framework_base patches credits by phantom 
-cd frameworks/base
-git fetch crdroid --unshallow
-git fetch https://github.com/RisingTechOSS/android_frameworks_base fourteen
+#cd frameworks/base
+#git fetch crdroid --unshallow
+#git fetch https://github.com/RisingTechOSS/android_frameworks_base fourteen
 #Force LTA CA
-git cherry-pick 9756c4c
+#git cherry-pick 9756c4c
 #Downgrade
-git cherry-pick ba93896
-cd ../..
+#git cherry-pick ba93896
+#cd ../..
 
 #toggle for LTE CA
-cd packages/apps/Settings
-git fetch crdroid --unshallow
-git fetch https://github.com/RisingTechOSS/android_packages_apps_Settings fourteen
-git cherry-pick 041f5f0
-cd ../../..
+#cd packages/apps/Settings
+#git fetch crdroid --unshallow
+#git fetch https://github.com/RisingTechOSS/android_packages_apps_Settings fourteen
+#git cherry-pick 041f5f0
+#cd ../../..
 
 #json support for PIF
-cd frameworks/base
-git fetch https://github.com/PhantomEnigma/android_frameworks_base 14.0
-git cherry-pick b8c1f87
-git cherry-pick 5d03127
-cd ../..
+#cd frameworks/base
+#git fetch https://github.com/PhantomEnigma/android_frameworks_base 14.0
+#git cherry-pick b8c1f87
+#git cherry-pick 5d03127
+#cd ../..
 
 # extra 
 git fetch https://github.com/Gtajisan/android_packages_apps_Settings
