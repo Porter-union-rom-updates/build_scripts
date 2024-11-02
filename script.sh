@@ -46,5 +46,5 @@ lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap3a-userdebug ||
 echo "============="
 
 # Make cleaninstall
-make installclean
+make installclean && mka bacon
 echo "============="
