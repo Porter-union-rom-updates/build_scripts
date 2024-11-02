@@ -49,11 +49,11 @@ git cherry-pick 40fe82e
 git remote remove tmpRepo2
 cd ../../
 
-if [ ! -e "vendor/lineage-priv" ]; then
-    curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
-    chmod +x create-signed-env.sh
-    ./create-signed-env.sh
-fi
+#if [ ! -e "vendor/lineage-priv" ]; then
+#    curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
+#    chmod +x create-signed-env.sh
+#    ./create-signed-env.sh
+#fi
 
 # Export
 #export BUILD_USERNAME=Farhan 
@@ -62,6 +62,6 @@ fi
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
-lunch lineage_Mi439_4_19-ap2a-userdebug || lunch lineage_Mi439_4_19-userdebug
-make installclean
-mka bacon
+# Build the ROM
+lunch lineage_Mi439_4_19-ap2a-userdebug && make installclean && mka bacon
+
