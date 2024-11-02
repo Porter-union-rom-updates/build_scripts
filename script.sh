@@ -30,7 +30,7 @@ git revert 8ae1b73
 git remote remove tmpRepo
 cd ../../../
 # extra 
-Rinto:
+
 git fetch https://github.com/Gtajisan/android_packages_apps_Settings
 git cherry-pick 3dd2f59
 git cherry-pick 06ca759
