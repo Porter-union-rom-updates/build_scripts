@@ -4,8 +4,7 @@
 rm -rf .repo/local_manifests/ 
 
 # Init Rom Manifest
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-
+repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # Clone local_manifests repository
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-avc1-viperfx .repo/local_manifests
