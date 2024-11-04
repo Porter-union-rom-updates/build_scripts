@@ -8,7 +8,7 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # Clone local_manifests repository
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-avc1-viperfx .repo/local_manifests
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-crdroid-mithorium .repo/local_manifests 
+git clone https://github.com/Gtajisan/local_manifests.git --depth 1 -b 15 .repo/local_manifests 
 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests && 
 # if [ ! $? == 0 ]
