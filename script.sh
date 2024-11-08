@@ -27,6 +27,9 @@ git remote add tmpRepo https://github.com/Porter-union-rom-updates/android_packa
 git fetch tmpRepo 15.0
 git cherry-pick 860634b
 git cherry-pick 30ec96a
+git cherry-pick 2afa6d1
+git cherry-pick 730b16a
+
 # https://github.com/crdroidandroid/android_packages_apps_Settings/commit/c6fdcc764c038007993045dfd5cb17999ebf00fb
 git revert c6fdcc7
 git remote remove tmpRepo
@@ -58,8 +61,8 @@ cd ../../
 #cd ../../
 
 # Set up build environment
-export BUILD_USERNAME=devil 
-export BUILD_HOSTNAME=crave 
+export BUILD_USERNAME=FARHAN 
+export BUILD_HOSTNAME=crave
 
 source build/envsetup.sh
 
