@@ -63,11 +63,6 @@ export BUILD_HOSTNAME=crave
 
 source build/envsetup.sh
 
-if [ ! -e "vendor/lineage-priv" ]; then
-    curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
-    chmod +x create-signed-env.sh
-    ./create-signed-env.sh
-fi
  
 # Build the ROM
 # lunch lineage_Mi439-ap2a-userdebug && make installclean && mka bacon
