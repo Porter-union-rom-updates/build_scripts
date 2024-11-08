@@ -77,3 +77,7 @@ echo "============="
 # Make cleaninstall
 make installclean && mka bacon
 echo "============="
+# one more 
+lunch lineage_Mi439_4_19-ap2a-userdebug || lunch lineage_Mi439_4_19-userdebug
+make installclean
+mka bacon
