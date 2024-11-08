@@ -76,3 +76,6 @@ source build/envsetup.sh
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/402103
 lunch lineage_Mi439_4_19-ap3a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-ap3a-eng && make installclean && mka bacon
+lunch lineage_Mi439_4_19-ap2a-userdebug || lunch lineage_Mi439_4_19-userdebug
+make installclean
+mka bacon
