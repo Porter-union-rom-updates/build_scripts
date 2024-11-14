@@ -29,7 +29,7 @@ rm -rf packages/apps/ParanoidSense
 echo "=======  Done ======"
 
 # Export
-export BUILD_USERNAME=FARHAN•XD
+export BUILD_USERNAME=unlucky 
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -39,6 +39,6 @@ echo "====== Envsetup Done ======="
 
 # lunch 
 . build/envsetup.sh
-goafterlife Mi439_4_19
-goafterlife Mi439_4_19 userdebug
-
+lunch afterlife_Mi439_4_19-userdebug
+m afterlife -j$
+m afterlife 
