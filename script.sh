@@ -30,10 +30,7 @@ echo "======= Export Done ======"
 . build/envsetup.sh 
 echo "====== Envsetup Done ======="
 
-# Lunch
-lunch lineage_mi439-ap2a-userdebug
-echo "============="
-
-# Build rom
-m evolution
-
+# ... now run
+. build/envsetup.sh
+brunch Mi439_4_19
+brunch Mi439_4_19 usbdebig 
