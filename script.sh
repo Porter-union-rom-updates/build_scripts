@@ -27,10 +27,15 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 echo "======= Export Done ======"
 
 # Set up build environment
-. build/envsetup.sh 
+source build/envsetup.sh
 echo "====== Envsetup Done ======="
+
+# Lunch
+lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap3a-userdebug || lunch lineage_Mi439_4_19-ap2a-userdebug
+echo "============="
+
 
 # ... now run
 . build/envsetup.sh
-brunch Mi439_4_19
 brunch Mi439_4_19 userdebug 
+brunch Mi439_4_19
