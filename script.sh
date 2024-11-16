@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b Evo/14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b TenX/15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=FARHAN_UN
+export BUILD_USERNAME=devil
 export BUILD_HOSTNAME=crave 
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 echo "======= Export Done ======"
