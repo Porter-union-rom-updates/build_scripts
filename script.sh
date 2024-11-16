@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
+repo init -u https://github.com/TenX-OS/manifest.git -b fourteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -33,4 +33,4 @@ echo "====== Envsetup Done ======="
 # ... now run
 . build/envsetup.sh
 brunch Mi439_4_19
-brunch Mi439_4_19 usbdebig 
+brunch Mi439_4_19 userdebug 
