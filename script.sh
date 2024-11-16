@@ -32,10 +32,14 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap3a-userdebug || lunch lineage_Mi439_4_19-ap2a-userdebug
+make installclean
+mka bacon
 echo "============="
-
 
 # ... now run
 . build/envsetup.sh
+echo "============="
+echo "============="
+# lunch 
 brunch Mi439_4_19 userdebug 
 brunch Mi439_4_19
