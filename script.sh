@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b TenX/15 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b TenX/15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
