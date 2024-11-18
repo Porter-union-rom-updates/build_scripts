@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b infinity-x .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b infinity .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -22,7 +22,7 @@ echo "============="
 
 
 # Export
-export BUILD_USERNAME=FARHAN
+export BUILD_USERNAME=devil
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
