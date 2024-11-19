@@ -24,6 +24,8 @@ echo "============="
 # Export
 export BUILD_USERNAME=devil
 export BUILD_HOSTNAME=crave
+export ALLOW_MISSING_DEPENDENCIES=true
+echo ======= Export Done ======
 echo "======= Export Done ======"
 
 # Set up build environment
