@@ -28,11 +28,15 @@ export BUILD_USERNAME=devil
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
+export ALLOW_MISSING_DEPENDENCIES=true
 echo "======= Export Done ======"
 
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
+
+# fix error 
+rm -rf external/chromium-webview
 
 # Lunch
 . build/envsetup.sh
