@@ -42,7 +42,7 @@ brunch Mi439_4_19 userdebug
 brunch Mi439_4_19
 
 # Lunch
-lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap3a-userdebug || lunch lineage_Mi439_4_19-ap2a-userdebug
+mistify Mi439_4_19 userdebug
 mist b
 
 
