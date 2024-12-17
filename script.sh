@@ -12,7 +12,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b Alpha-dr-14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b alpha/14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
