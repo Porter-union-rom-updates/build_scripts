@@ -15,7 +15,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Sync
-/opt/crave/resync.sh && repo sync
+/opt/crave/resync.sh 
 echo "============="
 echo "Sync success"
 echo "============="
@@ -25,13 +25,15 @@ export BUILD_USERNAME=FARHAN
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
+
 # Set up build environment
 . build/envsetup.sh 
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch aosp_mi439-ap2a-userdebug 
-lunch aosp_mi439-userdebug  
-make installclean
+lunch aosp_mi439-ap2a-userdebug
+
+# Build
 mka bacon
+
 
