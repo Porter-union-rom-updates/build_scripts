@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b MIST/15 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b MistOS/15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -38,11 +38,11 @@ echo "====== Envsetup Done ======="
 
 # lunch 1
 . build/envsetup.sh
-brunch Mi439_4_19 userdebug
-brunch Mi439_4_19
+brunch mi439 userdebug
+brunch mi439
 
 # Lunch
-mistify Mi439_4_19 userdebug
+mistify mi439 userdebug
 mist b
 
 
