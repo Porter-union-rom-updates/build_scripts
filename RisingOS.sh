@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Project-Mist-OS/manifest -b 15 --git-lfs
+repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -32,17 +32,14 @@ export BUILD_USERNAME=FARHAN
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
+
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# lunch 1
-. build/envsetup.sh
-brunch mi439 userdebug
-brunch mi439
-
 # Lunch
-mistify mi439 userdebug
-mist b
+riseup mi439 userdebug
+echo "============="
 
-
+# Build rom
+rise b
