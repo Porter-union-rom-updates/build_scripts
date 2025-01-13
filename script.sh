@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs
+repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b Pixel/14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b vic .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -34,6 +34,7 @@ echo "============="
 lunch aosp_mi439-userdebug
 lunch aosp_mi439-ap3a-userdebug
 lunch aosp_mi439-ap2a-userdebug
+lunch aosp_mi439-ap4a-userdebug
 # Build
 mka bacon
 
