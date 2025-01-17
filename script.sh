@@ -34,6 +34,7 @@ echo "====== Envsetup Done ======="
 # lunch fumking
 . build/envsetup.sh
 lunch banana_mi439-userdebug
+lunch banana_mi439-ap2a-userdebug
 m banana
 
 
