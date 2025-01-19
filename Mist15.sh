@@ -38,10 +38,6 @@ echo "====== Envsetup Done ======="
 
 # lunch 1
 . build/envsetup.sh
-brunch mi439 userdebug
-brunch mi439
-
-# Lunch
 mistify mi439 userdebug
 mist b
 
