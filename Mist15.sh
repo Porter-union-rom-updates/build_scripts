@@ -40,5 +40,4 @@ echo "====== Envsetup Done ======="
 . build/envsetup.sh
 mistify mi439 userdebug
 mist b
-
-
+breakfast mi439
