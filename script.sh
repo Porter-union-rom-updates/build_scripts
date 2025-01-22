@@ -31,10 +31,8 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
+source build/envsetup.sh
 lunch aosp_mi439-userdebug
-lunch aosp_mi439-ap3a-userdebug
-lunch aosp_mi439-ap2a-userdebug
-lunch aosp_mi439-ap4a-userdebug
-# Build
-mka bacon
+echo "exported hostname"
+breakfast mi439 && make installclean && mka bacon -j$(nproc --all)
 
