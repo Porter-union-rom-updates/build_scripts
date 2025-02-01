@@ -27,6 +27,15 @@ echo "============="
 # echo "Keys copied"
 # echo "============="
 
+# keys
+git clone https://github.com/ProjectMatrixx/android_vendor_lineage-priv_keys-template.git -b master vendor/lineage-priv/keys
+cd vendor/lineage-priv/keys
+./generate.sh
+cd ../../..
+echo "============="
+echo "Keys copied"
+echo "============="
+
 # Export
 export BUILD_USERNAME=FARHAN 
 export BUILD_HOSTNAME=crave
