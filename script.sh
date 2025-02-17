@@ -38,11 +38,11 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap3a-userdebug || lunch lineage_Mi439_4_19-ap2a-userdebug
+lunch lineage_mi439-userdebug || lunch lineage_mi439-ap3a-userdebug || lunch lineage_mi439-ap2a-userdebug
 echo "============="
 
 # Make cleaninstall
-lunch lineage_Mi439_4_19-ap4a-userdebug
+lunch lineage_mi439-ap4a-userdebug
 make installclean
 echo "============="
 
