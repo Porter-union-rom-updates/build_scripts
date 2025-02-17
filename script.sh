@@ -29,9 +29,15 @@ echo "============="
 
 
 # Export
-export BUILD_USERNAME=FARHAN 
-export BUILD_HOSTNAME=crave
+#export BUILD_USERNAME=FARHAN 
+#export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
+
+# key
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+cd vendor/evolution-priv/keys
+./keys.sh
+cd ../../..
 
 # Set up build environment
 . build/envsetup.sh
