@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b vic .repo/local_manifests
+git clone https://github.com/Porter-union-rom-updates/local_manifests_rose -b PixelOS/15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -33,6 +33,6 @@ echo "============="
 # Lunch
 source build/envsetup.sh
 lunch aosp_mi439-userdebug
-echo "exported hostname"
-breakfast mi439 && make installclean && mka bacon -j$(nproc --all)
+make installclean 
+&& mka bacon 
 
