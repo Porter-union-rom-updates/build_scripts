@@ -32,7 +32,8 @@ echo "============="
 
 # Lunch
 source build/envsetup.sh
-lunch aosp_mi439-userdebug
+lunch aosp_rosy-userdebug
+lunch aosp_rosy-ap4a-userdebug
 make installclean 
 && mka bacon 
 
