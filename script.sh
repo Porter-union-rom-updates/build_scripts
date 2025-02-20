@@ -9,10 +9,11 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b Evo/15 .repo/local_manifests
+git clone https://github.com/Porter-union-rom-updates/local_manifests_rose -b PixelOS/15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
+
 
 # Sync
 /opt/crave/resync.sh
@@ -44,11 +45,11 @@ cd ../../..
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_mi439-userdebug || lunch lineage_mi439-ap3a-userdebug || lunch lineage_mi439-ap2a-userdebug
+lunch lineage_rosy-userdebug || lunch lineage_rosy-ap3a-userdebug || lunch lineage_rosy-ap2a-userdebug
 echo "============="
 
 # Make cleaninstall
-lunch lineage_mi439-ap4a-userdebug
+lunch lineage_rosy-ap4a-userdebug
 make installclean
 echo "============="
 
