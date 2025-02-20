@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Porter-union-rom-updates/local_manifests_rose -b PixelOS/15 .repo/local_manifests
+git clone https://github.com/Porter-union-rom-updates/local_manifests_rose -b Evo/15x .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
