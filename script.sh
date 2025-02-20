@@ -34,6 +34,10 @@ echo "============="
 #export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
+# Atiga Trees 
+git clone https://github.com/Gtajisan/device_xiaomi_rosy -b Evo/15 device/xiaomi/rosy
+
+
 # key
 git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
 cd vendor/evolution-priv/keys
