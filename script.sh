@@ -39,10 +39,10 @@ git clone https://github.com/Gtajisan/device_xiaomi_rosy -b Evo/15 device/xiaomi
 
 
 # key
-git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
-cd vendor/evolution-priv/keys
-./keys.sh
-cd ../../..
+#git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+#cd vendor/evolution-priv/keys
+#./keys.sh
+#cd ../../..
 
 # Set up build environment
 . build/envsetup.sh
