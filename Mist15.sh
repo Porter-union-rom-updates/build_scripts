@@ -28,7 +28,7 @@ echo "============="
 # echo "============="
 
 # Export
-export BUILD_USERNAME=FARHAN 
+export BUILD_USERNAME=misti 
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -40,4 +40,4 @@ echo "====== Envsetup Done ======="
 . build/envsetup.sh
 mistify mi439 userdebug
 mist b
-breakfast mi439
+mist sb
