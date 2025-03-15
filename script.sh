@@ -44,10 +44,11 @@ echo "Setting up build environment..."
 # Lunch configuration
 echo "Configuring lunch..."
 
-lunch treble_arm64_bN-ap2a-userdebug || { echo "Lunch configuration failed"; exit 1; }
+lunch treble_arm64_bN-ap2a-userdebug || lunch treble_arm64_bgN-ap4a-userdebug || { echo "Lunch configuration failed"; exit 1; }
 
 # Build the matrixx
 echo "LineageOS_gsi..."
-make systemimage || { echo "Build failed"; exit 1; }
+make systemimage 
+##{ echo "Build failed"; exit 1; }
 
-echo "LineageOS_gsi Build completed successfully!"
+#echo "LineageOS_gsi Build completed successfully!"
