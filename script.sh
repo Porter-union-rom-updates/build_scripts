@@ -24,7 +24,18 @@ export BUILD_USERNAME=gsi_hunt
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 
-
+# generate.sh
+echo "LineageOS_gsi genertae.sh ..."
+cd device/phh/treble
+bash generate.sh lineage
+cd ../../..
+{ echo "bash failed"; exit 1; }
+# generate.sh 
+echo "LineageOS_gsi genertae.sh ..."
+cd LineageOS_gsi
+bash patches/apply-patches.sh .
+cd ..
+{ echo "bash failed"; exit 1; }
 
 # Set up build environment
 echo "Setting up build environment..."
@@ -32,6 +43,7 @@ echo "Setting up build environment..."
 
 # Lunch configuration
 echo "Configuring lunch..."
+
 lunch treble_arm64_bN-ap2a-userdebug || { echo "Lunch configuration failed"; exit 1; }
 
 # Build the matrixx
