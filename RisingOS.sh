@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
+repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -38,7 +38,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-riseup mi439 userdebug
+riseup mi439 userdebug 
 echo "============="
 
 # Build rom
