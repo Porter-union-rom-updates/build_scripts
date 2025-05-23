@@ -3,7 +3,8 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs
+repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs
+#repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
